@@ -9,9 +9,13 @@ const App = () => {
     { title: "Food", amount: 300.0, date: new Date(2021, 2, 8) },
   ];
 
+  const addExpenseHandler = (event) => {
+    const saveNewExpenseData = {};
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />
     </div>
   );
